@@ -1,0 +1,22 @@
+ALL:
+A             E     A
+Sabdamuyarthi padiduvin
+E              A     F#m
+Sakalarumonnai padiduvin
+F#m              
+Ennennum jeevickum
+E            A
+Sarvesarane vazhthiduvin vazhthiduvin
+
+BGM:
+
+F#m               C#
+Paripavananam sarvesa
+                    D
+Paripavananam belavane
+Bm                   F#m
+Paripavananam amarthyane
+A         E      C#   F#m
+Nin kripa njangalkekaname
+
+Reading ...

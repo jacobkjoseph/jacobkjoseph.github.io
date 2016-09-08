@@ -1,0 +1,17 @@
+div.box
+{
+width:140px;
+background-color:#b0e0e6;
+}
+div.play
+{
+float: left
+}
+div.pause
+{
+float: left
+}
+div.replay
+{
+float: left
+}

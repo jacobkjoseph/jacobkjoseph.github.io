@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="popup.css">
+<title>scratch popup</title>
+<script src="popup.js"></script>
+</head>
+<body >
+
+<!--<input type="button" name="clickme" value="clickme" id="clickme">clickme for awesomeness</input>-->
+<img id="loaderImage" src="images/emblam.png"/>
+<div class="box" align="centre">
+<div class="play"><button id="play"><img src="images/play.png"></button></div> 
+<div class="pause"><button id="pause"><img src="images/pause.png"></button></div> 
+<div class="replay"><button id="replay"><img src="images/replay.png"></button></div>
+</div>
+</body>
+</html>

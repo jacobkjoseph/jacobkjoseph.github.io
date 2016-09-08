@@ -1,0 +1,2 @@
+console.log("chrome extension party!");
+//alert("request reached to content script");
