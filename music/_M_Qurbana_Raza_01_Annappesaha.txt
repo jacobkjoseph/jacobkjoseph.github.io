@@ -1,14 +1,4 @@
-
-<!doctype html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Qurbana Raza 01 Annappesaha Thirunalil
-        </title>
-        <link rel="stylesheet" type="text/css" href="jquery.transposer.css" />
-    </head>
-    <body>
-        <pre id="content" data-key="C"  onclick="myFunction()">C         
+C         
 Anna pesaha thirunnalil
 G
 Karthavaruliya kalpanapol
@@ -30,7 +20,7 @@ C
 Thiru munpakeyannacheedaam
 
 
-Tune group 1:
+Tune 1:
 01 Annapesaha https://www.youtube.com/watch?v=czVhKFS8HlE
 03 Swargasthithanam https://www.youtube.com/watch?v=agXDjemF5q0
 04 Karthave Mama Rajave https://www.youtube.com/watch?v=zqPF3V4XP5M
@@ -39,25 +29,18 @@ Tune group 1:
 19 Mishiha Karthavin Krupayum https://www.youtube.com/watch?v=nvfe26yxOHs
 24 Karthavam Mishiha Vazhiyay https://www.youtube.com/watch?v=t48V-Y2zd4Y
 
-Tune group 2:
+Tune 2:
 02 Athyunnathamam https://www.youtube.com/watch?v=tVPlw6GSmTM
 17 Thathanumange https://www.youtube.com/watch?v=LHOaJpWdLQo
 
-Tune group 3:
+Tune 3:
 08 Ambaramanavaratham https://www.youtube.com/watch?v=rNzWIfr5ch0
 16 Mishiha Karthavin https://www.youtube.com/watch?v=1mGjaSa6zl4
 22 Rakshakaneesho than https://www.youtube.com/watch?v=AR9fOfjud4g
 
-Tune group 4:
+Tune 4:
 10 Halleluyya Padeedunnen https://www.youtube.com/watch?v=ywTDXsc7BvU
 
-Tune 5: ()
+Tune 5:
 21 Athipoojithamam nin https://www.youtube.com/watch?v=wiJwZ6dpPJw
 
-
-        </pre>
-        <script type="text/javascript" src="jquery.min.js"></script>
-        <script type="text/javascript" src="jquery.transposer.js"></script>
-        <script type="text/javascript">$(function() {$("pre").transpose();});</script>
-    </body>
-</html>

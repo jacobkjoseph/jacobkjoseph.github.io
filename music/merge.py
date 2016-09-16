@@ -15,7 +15,12 @@ def clean_name(name):
 
 
 def main():
-    # Delete all .html files
+    # Rename all .txt files
+    for file in glob.glob("*.txt"):
+        os.rename(file,file.replace(' ','_'))
+	
+	
+	# Delete all .html files
     for file in glob.glob("*.html"):
         os.remove(file)
 
