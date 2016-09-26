@@ -1,4 +1,4 @@
-﻿Were You There?
+Were You There?
 
 ORDER: I V1 V2 V3 V4 E
 
