@@ -54,7 +54,7 @@ def main():
         with open(newFile, 'w') as outfile:
             # -4 is to skip the file extension (.txt)
             outfile.write(
-                head1 + clean_name(fileName[:-4]) + head2 + open(fileName, 'r').read() + tail)
+                head1 + clean_name(fileName[:-4]) + head2 + open(fileName, 'r', encoding='utf8',  errors='ignore').read() + tail)
 
     # Generate the index.html file
     f = open("index.html", 'w')
