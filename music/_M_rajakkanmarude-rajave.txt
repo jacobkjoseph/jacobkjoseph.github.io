@@ -1,0 +1,56 @@
+intro:
+
+F     A#     F
+F     A#
+   Gm
+   F
+
+F                                 Gm
+rajakkanmarude... rajave... ninte raajyam vareename...
+C                                 A#      C      F
+neethakkanmarude nethave... ninte nanma nirayeename...
+
+F       Dm  C   Dm  C   A#  F
+123 123 123 123 123 123 123 123
+
+pallavi:
+F              A#  F        C              Gm
+rajakkanmarude rajave ninte raajyam vareename
+C         F      C             A#      C      F
+neethakkanmarude nethave ninte nanma nirayeename (2)
+
+b.g.1:
+A#      Gm      F
+123 123 123 123 123 123 123
+A#      Gm      F
+123 123 123 123 123 123 123
+A#      F       Gm  C   F
+123 123 123 123 123 123 123 123
+
+anupallavi:
+F                 C              A#            F
+kaalithozhuthilum kaanayilum kadalalayilum kaalvariyilum (2)
+F               Am     A#                C         F
+kaalam kathorthirikkum aviduthe kaalocha kettu njangal
+F        C         F
+kaalocha kettu njangal
+
+(rajakkanmarude)
+
+b.g.2:
+A#      Gm      F
+123 123 123 123 123 123 123
+A#      Gm      F
+123 123 123 123 123 123 123
+A#      F       Gm  C   F
+123 123 123 123 123 123 123 123
+
+charanam:
+F                 Am      A#                       F
+thirakaluyarumbol theeram mangumbol thonithuzhanju thalarumbol (2)
+A#            D#         F         A#                  F
+mattarumaarumillashrayam ninvathil muttunnu njangal thurakkille
+        A#                  F
+vaathil muttunnu njangal thurakkille
+
+(rajakkanmarude)
