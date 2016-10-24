@@ -65,7 +65,7 @@ def main():
 	<head>
 		<title>Music</title>
 		<script type="text/javascript" src="sorttable.js"></script>
-		<link rel="stylesheet" type="text/css" href="index.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
 	</head>
 	<body>

@@ -1,28 +1,21 @@
-/*Reset browser's default settings*/
-
 html, body, div , h1, h2, h3, h4, h5, h6, a, font, img, li, ol, ul, form, td
 {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    background:none;
-    font-size:100%;
-    text-align:left;
-    list-style:none;
-    line-height:1.2;
-}
-
-body
-{
-    color: #222;
-    font-weight: normal;
-    font: 100% 'Georgia', serif;
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	background:none;
+	font-size:100%;
+	font-family:"Georgia";
+	font-style:normal;
+	text-align:left;
+	list-style:none;
+	line-height:1.5;
 }
 
 p
 {
-    text-align:justify;
+	text-align:justify
 }
 
 a
@@ -30,24 +23,14 @@ a
     text-decoration:none;
 }
 
-a:link
+a:link, a:visited
 {
-    COLOR:#4285f4;
+    color:#4285f4;
 }
 
-a:visited
+a:hover, a:active
 {
-    COLOR:#4285f4;
-}
-
-a:hover
- {
-    COLOR:#0f9d58;
-}
-
-a:active
- {
-    COLOR:#0f9d58;
+    color:#0f9d58;
 }
 
 .clearFloat
