@@ -64,7 +64,6 @@ def main():
 <html>
 	<head>
 		<title>Music</title>
-		<script type="text/javascript" src="sorttable.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
 	</head>
@@ -81,6 +80,7 @@ def main():
     # index footer
     temp = '''
 		</table>
+		<script type="text/javascript" src="sorttable.js"></script>
 	</body>
 </html>
 		'''
