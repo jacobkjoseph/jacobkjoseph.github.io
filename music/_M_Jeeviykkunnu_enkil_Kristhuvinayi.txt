@@ -1,14 +1,27 @@
 CHORUS:
-E                           A
-Jeevikkunnu enkil krishthuvinay        B              E
-Paadidunnu enkil daivathinay(2)      B                         A
-Nalla dasanayi (njan) theernathinal       B    A        E 
-En maranam enikkathu labham(2)                   A
-Lokathin mohagalil neengiB                      E
-Papathin dasanayi njan theernu                         A
-Nashtamayi poyakalangal orthu     B                       E 
-Ente daivathin sannithe njan chennu(2)                             A
-Enne snehippan yeshu bhoovil vannu    B                     E
-Enikkayi krushil nadhan pidanju                              A
-Thante thiru raktham enikkayi cheenthi      B                E 
+D                           G
+Jeevikkunnu enkil krishthuvinay
+        A              D
+Paadidunnu enkil daivathinay(2)
+      A                         G
+Nalla dasanayi (njan) theernathinal
+       A    G        D 
+En maranam enikkathu labham(2)
+
+                   G
+Lokathin mohagalil neengi
+A                      D
+Papathin dasanayi njan theernu
+                         G
+Nashtamayi poyakalangal orthu
+     A                       D 
+Ente daivathin sannithe njan chennu(2)
+
+                             G
+Enne snehippan yeshu bhoovil vannu
+    A                     D
+Enikkayi krushil nadhan pidanju
+                              G
+Thante thiru raktham enikkayi cheenthi
+      A                D 
 Enthoralbhuthame mahal sneham(2)
