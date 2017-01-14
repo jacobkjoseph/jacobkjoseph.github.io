@@ -1,38 +1,38 @@
 Chorus:
-F
+C
 Srishtikale Stuthi Paaduvin
-Gm       C         F
+Dm       G         C
 Naathane Vaazhthiduvin
-                  C      F
+                  G      C
 Mahimakal Thingum Ehaparame
-        A#    C          F
+        F     G          C
 Nithyam Paadi Pukazhthiduvin (2)
 
-F               C     F
+C               G     C
 Vaanidame Daiva doothare
-C        A#        F
+G        F         C
 Naathane Vaazhthiduvin
-Gm            C 
+Dm            G
 Ambarame Jalasanjayame
-        A#    C          F
+        F     G          C
 Nithyam Paadi Pukazhthiduvin
 
-F               C     F
+C               G     C
 Bhoovum Sakala Characharayum
-C        A#        F
+G        F         C
 Naathane Vaazhthiduvin
-Gm            C 
+Dm            G
 Kunnukal Thaazhwara Samathalayum
-        A#    C          F
+        F     G          C
 Nithyam Paadi Pukazhthiduvin
 
-F               C     F
+C               G     C
 Pakshi Mrugaadikal Tharunirakal
-C        A#        F
+G        F         C
 Naathane Vaazhthiduvin
-Gm            C 
+Dm            G
 Narakula Janapadamakilayume
-        A#    C          F
+        F     G          C
 Nithyam Paadi Pukazhthiduvin
 
 
