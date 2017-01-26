@@ -9,11 +9,11 @@ Nee ente praananaadhan
 Nee en Deivam  x2
 
 BRIDGE
-             Gm                  C
+             Gm                   C
 Aaraadhikkum njan poorna hridayamode
            F                   Dm
 Thedum nin mugham jeeva kaalamellam
-            Gm      C
+            Gm             C
 Sevicheedum njan en sarvavumaay
        Dm    A#  Dm
 Adiyanithaa
@@ -41,19 +41,33 @@ Nee ente maravidavum
 Nee ente Deivam
 
 STANZA
-YOU ARE MY REFUGE,
-YOU ARE MY FORTRESS,
-YOU ARE MY FRIEND IN NEED,
+Dm           Gm
+YOU ARE MY REFUGE
+C              Dm
+YOU ARE MY FORTRESS
+                     C
+YOU ARE MY FRIEND IN NEED
+           Dm   A#  Dm
 YOU ARE MY GOD!
 
 BRIDGE
-I WILL WORSHIP YOU WITH ALL OF MY HEART,
-I WILL SEEK YOUR FACE ALL THROUGH MY LIFE,
-I WILL SERVE YOU LORD WITH ALL THAT I HAVE,
+               Gm                 C
+I WILL WORSHIP YOU WITH ALL OF MY HEART
+                 F                   Dm
+I WILL SEEK YOUR FACE ALL THROUGH MY LIFE
+                 Gm                   C
+I WILL SERVE YOU LORD WITH ALL THAT I HAVE
+       Dm    A#  Dm
 HERE I AM
 
 CHORUS
-HERE I AM OH LORD (3)
+       A#    C 
+HERE I AM OH LORD
+       F     Dm  
+HERE I AM OH LORD
+       A#    C 
+HERE I AM OH LORD
+       Dm    A#  Dm
 HERE I AM.
 
 STANZA
@@ -75,16 +89,15 @@ sankat mei mera dost,
 mera prabhu
 
 BRIDGE
-Aradhana karoon 
-mai poore dil se
-mai tujhe dhondhoonga
-sampoorna jeevan mei
-teri seva karoonga 
-meri saari cheezo se
+Aradhana karoon mai poore dil se
+mai tujhe dhondhoonga sampoorna jeevan mei
+teri seva karoonga meri saari cheezo se
 mai hoon yahaan
 
 CHORUS
-mai hoon yahaan prabhu(3)
+mai hoon yahaan prabhu
+mai hoon yahaan prabhu
+mai hoon yahaan prabhu
 mai hoon yahaan
 
 STANZA
