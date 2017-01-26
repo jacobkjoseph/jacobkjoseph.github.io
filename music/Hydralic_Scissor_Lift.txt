@@ -1,0 +1,114 @@
+Hydralic Scissor Lift
+---------------------
+
+
+
+Objective
+---------
+	To build a demo hydralic scissor lift 
+	and to study the underlying principles 
+
+
+
+Background
+----------
+	Pascal's principle
+	A pressure applied at any point in an enclosed 
+	fluid is transmitted equally in all directions.
+
+	Mechanical advantage of lever
+	Lever amplifies the input distance at the output
+
+
+
+Materials
+---------
+	Popsicles
+	Syringes (10 ml and 20 ml)
+	Tube
+	Cotton swabs
+	Copper wire
+
+	
+
+Procedure
+---------
+	Make 3 holes in the popsicles - right, centre, left
+	Connect the popsicles together to form an X
+	Connect the Xs together
+	Connect the top platform
+	Connect the two syringes together using the tube
+	Connect the output piston to the bottom X
+
+	
+	
+Observations
+------------
+	Pascal's principle 
+		1. When the input syringe piston is pushed in, 
+		   the output syringe piston moves out
+		   
+		2. Since the input syringe is wide and the output syringe is narrow, 
+		   for a short in-movement for the input syringe, 
+		   the output syringe has a relatively long out-movement
+	
+	
+	Mechanical advantage of lever
+		1. When the ends of the X are brought together, 
+		   the X becomes tall
+		   
+		2. For a short horizontal movement, 
+		   the vertical movement is relatively large
+	
+	
+
+Experiments
+-----------
+
+	When the input syringe piston is pushed all the way in,
+		the output syringe piston moves out,
+		which brings the ends of the X together,
+		that extends the lift (tall and skinny)
+		Maximum height =   cm
+
+	When the input syringe piston is pulled all the way out,
+		the output syringe piston moves in,
+		which pushes the ends of the X apart,
+		that contracts the lift (short and squished)
+		Minimum height =   cm
+
+
+	
+Limitations	
+-----------
+	Compressible Fluid 
+		Since air is compressible, when the input piston is pushed in, 
+		the output piston does not push out as much as it would have 
+		if the fluid were to be incompressible
+		
+	Friction
+	Some input effort is lost due to friction
+		Friction between syringe piston and syringe cylinder
+		Friction between popsicles and cotton swabs
+		Friction between popsicles and base
+		
+	Strength
+	Since popsicles are not very strong, 
+		the lift is not very strong and hence can not bear heavy loads.
+
+	
+
+To try next
+-----------
+	Replace air with water
+		water is less compressible than air
+		
+	Replace popsicles with wood or metal
+		stronger material can build a sturdier lift which can lift heavier loads
+
+
+	
+References
+----------
+	https://www.wikiwand.com/en/Pascal's_law
+	https://www.wikiwand.com/en/Lever
