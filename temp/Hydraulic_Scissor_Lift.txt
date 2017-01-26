@@ -1,11 +1,11 @@
-Hydralic Scissor Lift
+Hydraulic Scissor Lift
 ---------------------
 
 
 
 Objective
 ---------
-	To build a demo hydralic scissor lift 
+	To build a demo hydraulic scissor lift 
 	and to study the underlying principles 
 
 
@@ -33,7 +33,7 @@ Materials
 
 Procedure
 ---------
-	Make 3 holes in the popsicles - right, centre, left
+	Make 3 holes in the popsicles - right, center, left
 	Connect the popsicles together to form an X
 	Connect the Xs together
 	Connect the top platform
