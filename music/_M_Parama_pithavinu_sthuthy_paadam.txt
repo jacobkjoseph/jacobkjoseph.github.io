@@ -1,20 +1,21 @@
-D                G           D
+CHORUS:
+A      E         D       A 
 Parama pithavinu sthuthy paadam
-                 G      D
+         Bm      A 
 Avanallo jeevane nalkiyavan
-                 G        A
+          E      D         E
 Paapangal aakave kshmichidunnu
-                 A      D
+A        Bm        E        A 
 Rogangal akhilavum neekkidunnu
 
 
-
+A              D    A 
 Ammaye polenne omanichu
-
+E       F#m     E      A
 Apakada velayil paalichavan
-
+       E         D    E  
 Aahara paaneeyam eakiyavan
-
+A                 F#m     E
 Nithyamam jeevane nalkidunnu
 
 
@@ -46,3 +47,6 @@ Kumbidam avan munpil aadhravay
 Hallelujah paadam modhamode
 
 Avanallo nammude rakshakaran
+
+
+https://chordify.net/chords/parama-pithavinu-sthuthi-padam-jo-mathew
