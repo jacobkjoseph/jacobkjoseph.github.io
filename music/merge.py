@@ -17,10 +17,10 @@ def clean_name(name):
 def main():
     # Rename all .txt files
     for file in glob.glob("*.txt"):
-        os.rename(file,file.replace(' ','_'))
-	
-	
-	# Delete all .html files
+        os.rename(file, file.replace(' ', '_'))
+
+
+    # Delete all .html files
     for file in glob.glob("*.html"):
         os.remove(file)
 
@@ -52,6 +52,7 @@ def main():
         # Populate the list of html files
         htmlFiles.append(newFile)
         with open(newFile, 'w') as outfile:
+            print(fileName)
             # -4 is to skip the file extension (.txt)
             outfile.write(
                 head1 + clean_name(fileName[:-4]) + head2 + open(fileName, 'r', encoding='utf8').read() + tail)
@@ -75,8 +76,10 @@ def main():
 		'''
     f.write(temp)
     for file in htmlFiles:
-        f.write("<tr><td><a href =\"" + file.replace(" ", "%20") + "\" target=\"_blank\">" + clean_name(file.title()) + "</td><td>" + time.strftime('%m/%d/%Y', time.gmtime(os.path.getmtime(
-            file.replace('.html', '.txt')))) + "</td><td>" + time.strftime('%m/%d/%Y', time.gmtime(os.path.getctime(file.replace('.html', '.txt')))) + "</td><td>" + file[1] + "</td></tr>\n")
+        f.write("<tr><td><a href =\"" + file.replace(" ", "%20") + "\" target=\"_blank\">" + clean_name(
+            file.title()) + "</td><td>" + time.strftime('%m/%d/%Y', time.gmtime(os.path.getmtime(
+            file.replace('.html', '.txt')))) + "</td><td>" + time.strftime('%m/%d/%Y', time.gmtime(
+            os.path.getctime(file.replace('.html', '.txt')))) + "</td><td>" + file[1] + "</td></tr>\n")
     # index footer
     temp = '''
 		</table>
@@ -87,6 +90,7 @@ def main():
 
     f.write(temp)
     f.close()
+
 
 if __name__ == '__main__':
     main()
