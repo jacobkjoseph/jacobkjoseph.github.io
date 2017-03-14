@@ -66,7 +66,7 @@ def main():
 	<head>
 		<title>Music</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 	</head>
 	<body>
 		<table class="sortable">
