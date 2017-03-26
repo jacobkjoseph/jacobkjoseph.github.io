@@ -4,26 +4,38 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 		<title>
-Karunmayane        </title>
+		
+		
+        </title>
         <link rel="stylesheet" type="text/css" href="jquery.transposer.css" />
     </head>
     <body>
         <pre id="content" data-key="C"  onclick="myFunction()">
-A           E
-Karunmayane Karunmayane
-A           E
-A           E
-F#m         E
-G           B
-En jaye
-G           B
-A
-Ne adichalum
-     B       E     A E
-Yeshue.. Karunamayane
+		
+
         </pre>
         <script type="text/javascript" src="jquery.min.js"></script>
         <script type="text/javascript" src="jquery.transposer.js"></script>
         <script type="text/javascript">$(function() {$("pre").transpose();});</script>
     </body>
+</html>
+
+
+<!doctype html>
+<html>
+	<head>
+		<title>Music</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	</head>
+	<body>
+		<table class="sortable">
+		<tr>
+			<th>Name</th><th>Modified</th><th>Created</th><th>Language</th>
+		</tr>
+		
+
+		</table>
+		<script type="text/javascript" src="sorttable.js"></script>
+	</body>
 </html>

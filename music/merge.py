@@ -15,37 +15,24 @@ def clean_name(name):
 
 
 def main():
+    # Initialize static html
+    with open('helper.py1', 'r') as f:
+        static_html = f.readlines()
+    header_1 = ''.join(static_html[0:6])
+    header_2 = ''.join(static_html[8:13])
+    footer_1 = ''.join(static_html[15:21])
+    index_header = ''.join(static_html[23:35])
+    index_footer = ''.join(static_html[37:41])
+
     # Rename all .txt files
     for file in glob.glob("*.txt"):
         os.rename(file, file.replace(' ', '_'))
-
 
     # Delete all .html files
     for file in glob.glob("*.html"):
         os.remove(file)
 
-    head1 = '''
-<!doctype html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>'''
-
-    head2 = '''
-        </title>
-        <link rel="stylesheet" type="text/css" href="jquery.transposer.css" />
-    </head>
-    <body>
-        <pre id="content" data-key="C"  onclick="myFunction()">'''
-    tail = '''
-        </pre>
-        <script type="text/javascript" src="jquery.min.js"></script>
-        <script type="text/javascript" src="jquery.transposer.js"></script>
-        <script type="text/javascript">$(function() {$("pre").transpose();});</script>
-    </body>
-</html>'''
-
-    # Generate a .html for each .txt
+    # Generate an .html for each .txt
     htmlFiles = []
     for fileName in glob.glob("*.txt"):
         newFile = fileName.replace('.txt', '.html')
@@ -55,40 +42,23 @@ def main():
             print(fileName)
             # -4 is to skip the file extension (.txt)
             outfile.write(
-                head1 + clean_name(fileName[:-4]) + head2 + open(fileName, 'r', encoding='utf8').read() + tail)
+                header_1 + clean_name(fileName[:-4]) + header_2 + open(fileName, 'r',
+                                                                       encoding='utf8').read() + footer_1)
 
     # Generate the index.html file
     f = open("index.html", 'w')
-    # index header
-    temp = '''
-<!doctype html>
-<html>
-	<head>
-		<title>Music</title>
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-	</head>
-	<body>
-		<table class="sortable">
-		<tr>
-			<th>Name</th><th>Modified</th><th>Created</th><th>Language</th>
-		</tr>
-		'''
-    f.write(temp)
+
+    f.write(index_header)
+
+    lang = {'E': 'English', 'H': 'Hindi', 'M': 'Malayalam'}
+
     for file in htmlFiles:
         f.write("<tr><td><a href =\"" + file.replace(" ", "%20") + "\" target=\"_blank\">" + clean_name(
             file.title()) + "</td><td>" + time.strftime('%m/%d/%Y', time.gmtime(os.path.getmtime(
             file.replace('.html', '.txt')))) + "</td><td>" + time.strftime('%m/%d/%Y', time.gmtime(
-            os.path.getctime(file.replace('.html', '.txt')))) + "</td><td>" + file[1] + "</td></tr>\n")
-    # index footer
-    temp = '''
-		</table>
-		<script type="text/javascript" src="sorttable.js"></script>
-	</body>
-</html>
-		'''
+            os.path.getctime(file.replace('.html', '.txt')))) + "</td><td>" + lang[file[1]] + "</td></tr>\n")
 
-    f.write(temp)
+    f.write(index_footer)
     f.close()
 
 
