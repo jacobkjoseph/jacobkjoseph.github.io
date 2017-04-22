@@ -5,8 +5,10 @@ import time
 
 def clean_name(name):
     clean_name = name
+    clean_name = clean_name.replace('_A_', '')
     clean_name = clean_name.replace('_E_', '')
     clean_name = clean_name.replace('_H_', '')
+    clean_name = clean_name.replace('_L_', '')
     clean_name = clean_name.replace('_M_', '')
     clean_name = clean_name.replace('.Html', '')
     clean_name = clean_name.replace('_', ' ')
@@ -50,7 +52,7 @@ def main():
 
     f.write(index_header)
 
-    lang = {'E': 'English', 'H': 'Hindi', 'M': 'Malayalam'}
+    lang = {'A': 'Aramaic','E': 'English', 'H': 'Hindi', 'L': 'Latin', 'M': 'Malayalam'}
 
     for file in htmlFiles:
         f.write("<tr><td><a href =\"" + file.replace(" ", "%20") + "\" target=\"_blank\">" + clean_name(
