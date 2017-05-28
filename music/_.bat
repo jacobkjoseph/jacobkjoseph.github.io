@@ -1,2 +1,1 @@
 python merge.py
-pause
