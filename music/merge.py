@@ -25,7 +25,7 @@ def main():
     footer_1 = ''.join(static_html[15:21])
     index_header = ''.join(static_html[23:35])
     index_footer = ''.join(static_html[37:41])
-
+    
     # Rename all .txt files
     for file in glob.glob("*.txt"):
         os.rename(file, file.replace(' ', '_'))

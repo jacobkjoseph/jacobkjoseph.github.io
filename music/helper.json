@@ -1,0 +1,7 @@
+{
+    "header_2": "        </title>\n        <link rel=\"stylesheet\" type=\"text/css\" href=\"jquery.transposer.css\" />\n    </head>\n    <body>\n        <pre id=\"content\" data-key=\"C\"  onclick=\"myFunction()\">\n",
+    "footer_1": "        </pre>\n        <script type=\"text/javascript\" src=\"jquery.min.js\"></script>\n        <script type=\"text/javascript\" src=\"jquery.transposer.js\"></script>\n        <script type=\"text/javascript\">$(function() {$(\"pre\").transpose();});</script>\n    </body>\n</html>\n",
+    "header_1": "<!doctype html>\n<html>\n    <head>\n        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />\n        <link rel=\"icon\" type=\"image/x-icon\" href=\"img/favicon.ico\">\n\t\t<title>\n",
+    "index_header": "<!doctype html>\n<html>\n\t<head>\n\t\t<title>Music</title>\n\t\t<link rel=\"stylesheet\" type=\"text/css\" href=\"style.css\" />\n\t\t<link rel=\"icon\" type=\"image/x-icon\" href=\"img/favicon.ico\">\n\t</head>\n\t<body>\n\t\t<table class=\"sortable\">\n\t\t<tr>\n\t\t\t<th>Name</th><th>Modified</th><th>Created</th><th>Language</th>\n\t\t</tr>\n",
+    "index_footer": "\t\t</table>\n\t\t<script type=\"text/javascript\" src=\"sorttable.js\"></script>\n\t</body>\n</html>"
+}
