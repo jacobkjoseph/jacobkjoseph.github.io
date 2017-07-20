@@ -1,0 +1,85 @@
+html, body, div , h1, h2, h3, h4, h5, h6, a, font, img, li, ol, ul, form, td
+{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	background:none;
+	font-size:100%;
+	font-family:"Source Sans Pro", "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Tahoma", sans-serif;
+	font-style:normal;
+	text-align:left;
+	list-style:none;
+	line-height:1.5;
+}
+
+p
+{
+	text-align:justify
+}
+
+a
+{
+    text-decoration:none;
+}
+
+a:link, a:visited
+{
+    color:#4285f4;
+}
+
+a:hover, a:active
+{
+    color:#0f9d58;
+}
+
+.clearFloat
+{
+    clear:both;
+}
+
+#header
+{
+    height:126px;
+    width:800px;
+    margin-top:0px;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:auto;
+    background:url('../img/hlogo.gif');
+}
+
+#mainContent
+{
+    height:auto;
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#leftContent
+{
+    height:300px;
+    width:279px;
+    padding:10px;
+    display:inline;
+    float:left;
+}
+
+#rightContent
+{
+    height:300px;
+    width:480px;
+    padding:10px;
+    display:inline;
+    float:left;
+}
+
+#footer
+{
+}
+
+#footer ul li
+{
+    display:inline;
+}
