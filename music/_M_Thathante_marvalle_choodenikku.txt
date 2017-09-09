@@ -15,9 +15,9 @@ Kothiyerunne arikil varan
 E0 B3 B2 E0 B3 B2 B0 B0 B2 B2 B3 
 Thiru paadathil kidanniduvan
 
-
+E2 E3 E5  E5 E3 E2 E0 E0 E2 E2 E3
 Thathante marvalle choodenikku
-
+E0 E2 E3 E3 E2 B3 B0 B2 B2 B3 
 Thathante kayyalle thanalenikku
 
 

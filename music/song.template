@@ -1,0 +1,37 @@
+<!DOCTYPE doctype html>
+<html>
+ <head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <link href="img/favicon.ico" rel="icon" type="image/x-icon"/>
+  <title>
+   Kandisa
+  </title>
+  <link href="jquery.transposer.css" rel="stylesheet" type="text/css">
+  </link>
+ </head>
+ <body>
+  <pre data-key="C" id="content" onclick="myFunction()">
+The Trisagion
+
+C       F  C
+Kandisa alaha (Holy God)
+        F     C
+Kandisa hailsana (Holy Mighty One)
+     A#    C
+Kandisa la mayosa (Holy Immortal One)
+    A#  C
+Esraham aleyn (Have mercy on us)
+
+https://www.youtube.com/watch?v=RTmoUX2wMR4
+
+
+        </pre>
+  <script src="jquery.min.js" type="text/javascript">
+  </script>
+  <script src="jquery.transposer.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   $(function() {$("pre").transpose();});
+  </script>
+ </body>
+</html>

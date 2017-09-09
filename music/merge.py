@@ -1,65 +1,85 @@
 import glob
 import os
 import time
+import re
+import sys
+from bs4 import BeautifulSoup
+# This chord_analysis.py file is a local copy
+from chord_analysis import find_first_chord
 
 
-def clean_name(name):
-    clean_name = name
-    clean_name = clean_name.replace('_A_', '')
-    clean_name = clean_name.replace('_E_', '')
-    clean_name = clean_name.replace('_H_', '')
-    clean_name = clean_name.replace('_L_', '')
-    clean_name = clean_name.replace('_M_', '')
-    clean_name = clean_name.replace('.Html', '')
-    clean_name = clean_name.replace('_', ' ')
-    clean_name = clean_name.replace('-', ' ')
-    return clean_name
+def clean_name(name, replace_char='_'):
+    name = name.title()
+    for a in ['_A_', '_E_', '_H_', '_L_', '_M_']:
+        if name.startswith(a):
+            name = name[3:]
+    name = re.sub('[^a-zA-Z]+', replace_char, name)
+    return name
+
+
+def create_song_html_from_template(txt_file_name):
+    html_file_name = txt_file_name.replace('.txt', '.html')
+    soup = BeautifulSoup(open('song.template'), "html.parser")
+    soup.head.title.string = clean_name(txt_file_name[:-4], ' ')
+    soup.body.pre.string = open(txt_file_name, 'r', encoding='utf8', errors='ignore').read()
+    soup.body.pre['data-key'] = find_first_chord(open(txt_file_name, 'r', encoding='utf-8').read())
+    soup = soup.prettify()
+    with open(html_file_name, "w") as file:
+        file.write(str(soup))
 
 
 def main():
-    # Initialize static html
-    with open('helper.py1', 'r') as f:
-        static_html = f.readlines()
-    header_1 = ''.join(static_html[0:6])
-    header_2 = ''.join(static_html[8:13])
-    footer_1 = ''.join(static_html[15:21])
-    index_header = ''.join(static_html[23:35])
-    index_footer = ''.join(static_html[37:41])
-    
-    # Rename all .txt files
-    for file in glob.glob("*.txt"):
-        os.rename(file, file.replace(' ', '_'))
+    lang = {'A': 'Aramaic', 'E': 'English', 'H': 'Hindi', 'L': 'Latin', 'M': 'Malayalam'}
 
     # Delete all .html files
     for file in glob.glob("*.html"):
         os.remove(file)
 
+    # Standardize all .txt file names
+    for file in glob.glob("*.txt"):
+        os.rename(file, re.sub('[^a-zA-Z]+', '_', file[:-4]).title() + '.txt')
+
     # Generate an .html for each .txt
-    htmlFiles = []
     for fileName in glob.glob("*.txt"):
-        newFile = fileName.replace('.txt', '.html')
-        # Populate the list of html files
-        htmlFiles.append(newFile)
-        with open(newFile, 'w') as outfile:
-            print(fileName)
-            # -4 is to skip the file extension (.txt)
-            outfile.write(header_1 + clean_name(fileName[:-4]) + header_2 + open(fileName, 'r', encoding='utf8', errors='ignore').read() + footer_1)
+        create_song_html_from_template(fileName)
 
     # Generate the index.html file
-    f = open("index.html", 'w')
+    soup = BeautifulSoup(open('index.template'), "html.parser")
+    for file in glob.glob('*.html'):
+        filename = file.replace(" ", "%20")
+        title = clean_name(file[:-5], ' ')
+        t1 = time.strftime('%m/%d/%Y', time.gmtime(os.path.getmtime(file.replace('.html', '.txt'))))
+        t2 = time.strftime('%m/%d/%Y', time.gmtime(os.path.getctime(file.replace('.html', '.txt'))))
+        lang_ = lang[file[1]]
 
-    f.write(index_header)
+        # ToDo improve the way the <tr> tags are appended to the table
+        temp_soup = BeautifulSoup("<b></b>", "html.parser")
 
-    lang = {'A': 'Aramaic','E': 'English', 'H': 'Hindi', 'L': 'Latin', 'M': 'Malayalam'}
+        a_tag = temp_soup.new_tag('a', href=filename, target="_blank")
+        a_tag.string = title
+        td1_tag = temp_soup.new_tag('td')
+        td1_tag.append(a_tag)
 
-    for file in htmlFiles:
-        f.write("<tr><td><a href =\"" + file.replace(" ", "%20") + "\" target=\"_blank\">" + clean_name(
-            file.title()) + "</td><td>" + time.strftime('%m/%d/%Y', time.gmtime(os.path.getmtime(
-            file.replace('.html', '.txt')))) + "</td><td>" + time.strftime('%m/%d/%Y', time.gmtime(
-            os.path.getctime(file.replace('.html', '.txt')))) + "</td><td>" + lang[file[1]] + "</td></tr>\n")
+        td2_tag = temp_soup.new_tag('td')
+        td2_tag.string = t1
 
-    f.write(index_footer)
-    f.close()
+        td3_tag = temp_soup.new_tag('td')
+        td3_tag.string = t2
+
+        td4_tag = temp_soup.new_tag('td')
+        td4_tag.string = lang_
+
+        tr_tag = temp_soup.new_tag('tr')
+        tr_tag.append(td1_tag)
+        tr_tag.append(td2_tag)
+        tr_tag.append(td3_tag)
+        tr_tag.append(td4_tag)
+
+        soup.body.table.append(tr_tag)
+
+    with open('index.html', "w") as file:
+        soup = soup.prettify()
+        file.write(str(soup))
 
 
 if __name__ == '__main__':
