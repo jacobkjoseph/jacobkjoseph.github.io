@@ -8,6 +8,30 @@ from bs4 import BeautifulSoup
 from chord_analysis import find_first_chord
 
 
+# File
+# ToDo move out all lyric files from the Github folder
+# ToDo move out the script from the Github folder
+# ToDo lyric files should not be edited by the script
+# ToDo remove meta info ('_A_', '_E_', '_H_', '_L_', '_M_' etc.) from file name and make it part of the file content
+# ToDo add tags to files ('praise', 'worship', 'thanksgiving', 'prayer', 'holy spirit' etc.)
+# ToDo logic to handle encoding issues UTF-8
+# ToDo logic to detect characters in chord lines that leads to chords not getting detected
+# ToDo leads (like chords) should also be transpose-able
+# AI
+# ToDo detect and annotate chorus, verses, hyperlinks (Youtube, Chordify) etc.
+# ToDo search by lyrics
+# ToDo cluster by similar chords, lyrics
+# Todo classify by lyrics
+# JavaScript
+# ToDo write own JS for for table sort, transpose chords etc.
+# ToDo show/hide chords
+# ToDo auto adjust song to avoid scrolling when playing guitar
+# ToDo improve the look and feel
+# ToDo ability to choose font, color etc
+# ToDo select/star a list of songs
+# ToDo email a comment about a song
+
+
 def clean_name(name, replace_char='_'):
     name = name.title()
     for a in ['_A_', '_E_', '_H_', '_L_', '_M_']:
