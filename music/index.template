@@ -6,7 +6,7 @@
  </head>
  <body>
   <table class="sortable">
-   <tr><th>Name</th><th>Modified</th><th>Created</th><th>Language</th></tr>
+   <tr><th>Name</th><th>Modified</th><th>Created</th><th>Language</th><th>Key</th><th>Chords</th></tr>
 		</table>
 		<script type="text/javascript" src="sorttable.js"></script>
 	</body>
