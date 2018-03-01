@@ -4,9 +4,10 @@ html, body, div , h1, h2, h3, h4, h5, h6, a, font, img, li, ol, ul, form, td
 	padding:0;
 	border:0;
 	outline:0;
-	background:none;
+	/* background:none; */
+	/* background-color:#ddd */
 	font-size:100%;
-	font-family:"Georgia";
+	font-family: "Inconsolata";
 	font-style:normal;
 	text-align:left;
 	list-style:none;
@@ -20,7 +21,7 @@ a
 
 a:link, a:visited
 {
-    color:#4285f4;
+    color:#0071c5;
 }
 
 a:hover, a:active
@@ -39,14 +40,15 @@ table, td, th
 	text-align:left;
 	padding:15px;
 	height:25px;
+	/* font-weight:lighter; */
 }
 
 /* Sortable tables */
-table.sortable thead 
+table.sortable thead
 {
 	background-color:#eee;
-	color:#666666;
-	font-weight:boldest;
+	color:#0071c5;
+	font-weight:bolder;
 	border-collapse:collapse;
 	width:100%;
 }
