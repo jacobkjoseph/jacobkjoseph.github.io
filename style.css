@@ -1,6 +1,9 @@
 html, body, div , h1, h2, h3, h4, h5, h6, a, font, img, li, ol, ul, form, td
 {
-	margin:0;
+	margin-top:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    margin-right:auto;
 	padding:0;
 	border:0;
 	outline:0;
@@ -33,34 +36,22 @@ a:hover, a:active
     color:#0f9d58;
 }
 
-.clearFloat
+
+#mainContent
 {
-    clear:both;
+    width:800px;
 }
 
 #header
 {
     height:126px;
     width:800px;
-    margin-top:0px;
-    margin-bottom:auto;
-    margin-left:auto;
-    margin-right:auto;
-    background:url('../img/hlogo.gif');
-}
-
-#mainContent
-{
-    height:auto;
-    width:800px;
-    margin-left:auto;
-    margin-right:auto;
+    background:url('img/hlogo.gif');
 }
 
 #leftContent
 {
-    height:300px;
-    width:279px;
+    width:280px;
     padding:10px;
     display:inline;
     float:left;
@@ -68,18 +59,8 @@ a:hover, a:active
 
 #rightContent
 {
-    height:300px;
     width:480px;
     padding:10px;
     display:inline;
     float:left;
-}
-
-#footer
-{
-}
-
-#footer ul li
-{
-    display:inline;
 }
