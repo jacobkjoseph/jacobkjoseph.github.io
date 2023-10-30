@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: 'Georgia';
+    color: brown;
+    background: linear-gradient(to right, gold, #b06500);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 16px
+}
+
+.title {
+    font-size: 54px
+}
+
+.subtitle {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.collapsible {
+  font-family: 'Georgia';
+  font-size: 30px;
+  text-align: left;
+  background-color: transparent;
+  color: brown;
+  cursor: pointer;
+  padding: 18px;
+  margin: 18px;
+  width: 80%;
+  border: 0.125em solid gold;
+  border-radius: 0.625em;
+  outline: none;
+  
+}
+
+.active, .collapsible:hover {
+  background-color: solid gold;
+  font-style: italic;
+}
+
+.content {
+  font-family: 'Georgia';
+  font-size: 18px;
+  text-align: center;
+  background-color: transparent;
+  color: brown;
+  padding: 12px;
+  margin: 12px;
+  width: 60%;
+  display: none;
+  overflow: hidden;
+}
+
+.top-left-image {
+    top: 0;
+    left: 50%;
+    /* max-height: 0.625em; Adjust max height relative to the base font size */
+}
+
+</style>
+</head>
+<body>
+
+<div class="image-container">
+<img src="image1.png" class="top-left-image">
+</div>
+<div class="header">
+	<div class="title">ἀγάπη 2023</div>
+	<div class="subtitle">Infant Jesus Syro-Malabar Catholic Church, Sacramento</div>
+</div>
+	
+<button type="button" class="collapsible">Stage opening and introduction of MC</button>
+<div class="content">
+<p>Salomi Tom,Sonia Cigil,Tony John,Aleena Saji,Aiden Chemmannure,Maria Abraham,Fremina Purackal</p>
+</div>
+<button type="button" class="collapsible">Open Section 2</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Open Section 3</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+<button type="button" class="collapsible">Musical medley</button>
+<div class="content">
+  <p>Mano Ulahannan,Jayesh Joseph,Sibichen George, 
+Saji George, Seleena Mano, Sherin Saji</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
