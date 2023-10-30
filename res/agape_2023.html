@@ -1,61 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>ἀγάπη 2023</title>
-    <style>
-/* Define a base font size in 'em' units */
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 body {
-    font-family: 'Georgia', 'Open Sans', sans-serif;
+    font-family: 'Georgia';
     color: brown;
     background: linear-gradient(to right, gold, #b06500);
     margin: 0;
     padding: 0;
     text-align: center;
-    font-size: 1em; /* Base font size, equivalent to 16px */
-}
-
-.header {
-    background-color: transparent;
-    padding: 1.25em; /* Adjust padding relative to the base font size */
+    font-size: 16px
 }
 
 .title {
-    font-size: 3.375em; /* Equivalent to 54px */
+    font-size: 54px
 }
 
 .subtitle {
-    font-size: 1.125em; /* Equivalent to 18px */
+    font-size: 18px;
     font-style: italic;
 }
 
-.program {
-    padding: 1.25em; /* Adjust padding relative to the base font size */
-    margin: 0.625em; /* Adjust margin relative to the base font size */
-    border: 0.125em solid gold; /* Adjust border thickness relative to the base font size */
-    border-radius: 0.625em; /* Adjust border radius relative to the base font size */
-    text-align: left;
+.collapsible {
+  font-family: 'Georgia';
+  font-size: 30px;
+  text-align: left;
+  background-color: transparent;
+  color: brown;
+  cursor: pointer;
+  padding: 18px;
+  margin: 18px;
+  width: 80%;
+  border: 0.125em solid gold;
+  border-radius: 0.625em;
+  outline: none;
+  
 }
 
-.toggle-button {
-    background-color: transparent;
-    color: brown;
-    border: none;
-    padding: 0.3125em 0.625em; /* Adjust padding relative to the base font size */
-    font-size: 1em; /* Equivalent to 16px */
-    border-radius: 0.3125em; /* Adjust border radius relative to the base font size */
-    cursor: pointer;
-    margin-right: 0.625em; /* Adjust margin relative to the base font size */
+.active, .collapsible:hover {
+  background-color: solid gold;
+  font-style: italic;
 }
 
-.program-title {
-    font-size: 1.25em; /* Adjust font size relative to the base font size */
-    display: inline;
-}
-
-.details {
-    font-size: 1.25em; /* Adjust font size relative to the base font size */
-    display: none;
+.content {
+  font-family: 'Georgia';
+  font-size: 18px;
+  text-align: left;
+  background-color: transparent;
+  color: brown;
+  padding: 0 20%;
+  width: 60%;
+  display: none;
+  overflow: hidden;
 }
 
 .top-left-image {
@@ -64,343 +61,234 @@ body {
     /* max-height: 0.625em; Adjust max height relative to the base font size */
 }
 
-
-    </style>
+</style>
 </head>
 <body>
-    <div class="image-container">
-	<img src="image1.png" class="top-left-image">
-	</div>
-    <div class="header">
-        <div class="title">ἀγάπη 2023</div>
-        <div class="subtitle">Infant Jesus Syro-Malabar Catholic Church, Sacramento</div>
+
+<div class="image-container">
+<img src="image1.png" class="top-left-image">
+</div>
+<div class="header">
+	<div class="title">ἀγάπη 2023</div>
+	<div class="subtitle">Infant Jesus Syro-Malabar Catholic Church, Sacramento</div>
+</div>
+	
+
+
+    <button type="button" class="collapsible">Stage Opening and Introduction of MC</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Coordinator: Salomi Tom </p>
+            <p><strong>Participants:</strong> Salomi Tom, Sonia Cigil, Tony John, Aleena Saji, Aiden Chemmannure, Maria Abraham, Fremina Purackal</p>
+            <p><strong>Duration:</strong> 5 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(1)">+</button>
-        <h2 class="program-title">Stage opening and introduction of MC</h2>
-        <div class="details" id="program1">
-            <p><strong>Leads:</strong> Salomi Tom </p>
-            <p><strong>Participants:</strong> Salomi Tom : Sonia Cigil , Tony John , Aleena Saji,Aiden Chemmannure, Maria Abraham,  Fremina Purackal</p>
-            <p><strong>Start Time:</strong> 15:00:00</p>
-            <p><strong>End Time:</strong> 15:15:00</p>
-        </div>
+    <button type="button" class="collapsible">Prayer Dance</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Coordinator: Jissa Jacob </p>
+            <p><strong>Participants:</strong> Jissa Jacob, Anu Tresa Antony, Ashlin Joby, Ashley Purackal</p>
+            <p><strong>Duration:</strong> 7 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(2)">+</button>
-        <h2 class="program-title">Prayer dance</h2>
-        <div class="details" id="program2">
-            <p><strong>Leads:</strong> Jissa Jacob </p>
-            <p><strong>Participants:</strong> Jissa Jacob, Anu Tresa Antony, Ashlin Joby, Ashley Purackal </p>
-            <p><strong>Start Time:</strong> 15:15:00</p>
-            <p><strong>End Time:</strong> 15:30:00</p>
-        </div>
-    </div>
-    
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(3)">+</button>
-        <h2 class="program-title">Welcome Speech</h2>
-        <div class="details" id="program3">
-            <p><strong>Leads:</strong> Rev. Fr. Ruban J. Thannickal</p>
+    <button type="button" class="collapsible">Welcome Speech</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Coordinator: Rev. Fr. Ruban J. Thannickal</p>
             <p><strong>Participants:</strong> Rev. Fr. Ruban J. Thannickal</p>
-            <p><strong>Start Time:</strong> 15:30:00</p>
-            <p><strong>End Time:</strong> 15:45:00</p>
-        </div>
+            <p><strong>Duration:</strong> 8 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(4)">+</button>
-        <h2 class="program-title">Inauguration (Lamp lighting)</h2>
-        <div class="details" id="program4">
-            <p><strong>Leads:</strong> Salomi Tom</p>
-            <p><strong>Participants:</strong> His Excellency Bishop Mar Joy Alappatt, Guest priests, Fr. Ruban Thannickal, Trustees : Cigil Palackalody, Hormese Murikken, Rajan George ,Saji Joseph, CCD Principal :  Shelby Kocherry</p>
-            <p><strong>Start Time:</strong> 15:45:00</p>
-            <p><strong>End Time:</strong> 16:00:00</p>
-        </div>
+    <button type="button" class="collapsible">Inauguration (Lamp lighting)</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Coordinator: Salomi Tom</p>
+            <p><strong>Participants:</strong> His Excellency Bishop Mar Joy Alappatt, Guest priests, Fr. Ruban Thannickal, Trustees: Cigil Palackalody, Hormese Murikken, Rajan George, Saji Joseph, CCD Principal: Shelby Kocherry, Program Coordinator: Salomi Tom</p>
+            <p><strong>Duration:</strong> 05:00:00 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(5)">+</button>
-        <h2 class="program-title">Address by Chief Guest</h2>
-        <div class="details" id="program5">
-            <p><strong>Leads:</strong> Salomi Tom</p>
+    <button type="button" class="collapsible">Address by Chief Guest</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Coordinator: Salomi Tom</p>
             <p><strong>Participants:</strong> His Excellency Bishop Mar Joy Alappat</p>
-            <p><strong>Start Time:</strong> 16:00:00</p>
-            <p><strong>End Time:</strong> 16:15:00</p>
-        </div>
+            <p><strong>Duration:</strong> 8 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(6)">+</button>
-        <h2 class="program-title">Action song</h2>
-        <div class="details" id="program6">
-            <p><strong>Leads:</strong> 
-Choreography: Jissa Jacob
+    <button type="button" class="collapsible">Action Song</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Choreography: Jissa Jacob
 Coordinator: Bindu Tiji</p>
-            <p><strong>Participants:</strong> Roshan Sebastian, Norah Mary Albin
-Emma Catherine Francis, Samuel Mathew
-Jisette Theresa Abraham, Ann Elizabeth Prince, Alesandra Rose Joseph 
-Gisele Ruby Joseph, Zane Mathew, Jeremiah Joseph
- Calvin John Jomon, Caitlyn Maria Jomon
- Johan George Bitto, Levine Vineeth
-</p>
-            <p><strong>Start Time:</strong> 16:15:00</p>
-            <p><strong>End Time:</strong> 16:30:00</p>
-        </div>
+            <p><strong>Participants:</strong> Roshan Sebastian, Norah Mary Albin, Emma Catherine Francis, Samuel Mathew, Jisette Theresa Abraham, Ann Elizabeth Prince, Alesandra Rose Joseph, Gisele Ruby Joseph, Zane Mathew, Jeremiah Joseph, Calvin John Jomon, Caitlyn Maria Jomon, Johan George Bitto, Levine Vineeth</p>
+            <p><strong>Duration:</strong> 5 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(7)">+</button>
-        <h2 class="program-title">Worship dance (സ്തുതി നൃത്തം)</h2>
-        <div class="details" id="program7">
+    <button type="button" class="collapsible">Worship Dance (സ്തുതി നൃത്തം)</button>
+    <div class="content">
             <p><strong>Leads:</strong> Choreography: Glaiji Titus                                                                                     Coordinator : Sheena Joji </p>
-            <p><strong>Participants:</strong> Glaiji Titus, Bindu Tiji, Letty Saji, 
-Melvi Alex, Jiji Felix, Sheena Joji, Sabitha Thomas,
-Mini Antony, Maria Binil,  Bindu Shaju,
-Philomina Antony & Jasmine Jose
+            <p><strong>Participants:</strong> Glaiji Titus, Bindu Tiji, Letty Saji, Melvi Alex, Jiji Felix, Sheena Joji, Sabitha Thomas, Mini Antony, Maria Binil, Bindu Shaju, Philomina Antony, Jasmine Jose
 </p>
-            <p><strong>Start Time:</strong> 16:30:00</p>
-            <p><strong>End Time:</strong> 16:45:00</p>
-        </div>
+            <p><strong>Duration:</strong> 8 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(8)">+</button>
-        <h2 class="program-title">Dance Drama : Story of Jesus</h2>
-        <div class="details" id="program8">
-            <p><strong>Leads:</strong> Preethy Rajesh</p>
-            <p><strong>Participants:</strong> Anna Alengaden, Elizabeth Murikken, Mary Murikken, Norah Sebastian,Mea Murikken , Sini Shajan, Preethy Rajesh, Thomas Murikken, Anton Alengaden, Caitilyn Jomon, Cathyln Jomon, Joan Alengaden, Hannah Alengaden , Michele Jepson, Ezahak Jepson, Sarah Shajan, Stephano Shajan, Rohan Sebastian, Johan Alengaden, Jerry Judy, Wilson Nechikat, Joppan Murikken, Molly Thomas, Sophie Wilson, Dhanu Jepson , Sonia Shammi, Winslet Shammi, Sheela Padayattil, Divya Jomon</p>
-            <p><strong>Start Time:</strong> 16:45:00</p>
-            <p><strong>End Time:</strong> 17:00:00</p>
-        </div>
+    <button type="button" class="collapsible">Dance Drama: Story of Jesus</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Coordinator: Preethy Rajesh</p>
+            <p><strong>Participants:</strong> Anna Alengaden, Elizabeth Murikken, Mary Murikken, Norah Sebastian, Mea Murikken, Sini Shajan, Preethy Rajesh, Thomas Murikken, Anton Alengaden, Caitilyn Jomon, Cathyln Jomon, Joan Alengaden, Hannah Alengaden, Michele Jepson, Ezahak Jepson, Sarah Shajan, Stephano Shajan, Rohan Sebastian, Johan Alengaden, Jerry Judy, Wilson Nechikat, Joppan Murikken, Molly Thomas, Sophie Wilson, Dhanu Jepson, Sonia Shammi, Winslet Shammi, Sheela Padayattil, Divya Jomon</p>
+            <p><strong>Duration:</strong> 11 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(9)">+</button>
-        <h2 class="program-title">English-Malayalam Devotional Mashup</h2>
-        <div class="details" id="program9">
+    <button type="button" class="collapsible">English-Malayalam Devotional Mashup</button>
+    <div class="content">
             <p><strong>Leads:</strong> Coordinator: Nimisha Maria</p>
-            <p><strong>Participants:</strong> Children participants: - Julia Justin, Daniel Varikkad, Sam Antony, Rosalia Trusty, Alesandra Joseph, Gisele Joseph, Anna Antony, Janet Justin. 
-Adult participants: - Justin John, Ajo Antony, Trusty Jose, Dayalu Varikkad, Maria Ajo, Jancy Noble, Bindu Trusty, Liji Joji, Beena Gigi, Gimi George, Ancy Sabu, Jisha Biju, Bilsy Joseph, Nobby Shenjin. 
-Orchestra Team: - Savio Trusty (Keyboard), Ashin S Thomas (Drums), Alan S Thomas (Piano), Joseph John Arukalil(Guitar), Neol Maria(violin).
+            <p><strong>Participants:</strong> Child participants: Julia Justin, Daniel Varikkad, Sam Antony, Rosalia Trusty, Alesandra Joseph, Gisele Joseph, Anna Antony, Janet Justin
+Adult participants: Justin John, Ajo Antony, Trusty Jose, Dayalu Varikkad, Maria Ajo, Jancy Noble, Bindu Trusty, Liji Joji, Beena Gigi, Gimi George, Ancy Sabu, Jisha Biju, Bilsy Joseph, Nobby Shenjin. 
+Orchestra Team: Savio Trusty (Keyboard), Ashin S Thomas (Drums), Alan S Thomas (Piano), Joseph John Arukalil (Guitar), Neol Maria (Violin)
 </p>
-            <p><strong>Start Time:</strong> 17:00:00</p>
-            <p><strong>End Time:</strong> 17:15:00</p>
-        </div>
+            <p><strong>Duration:</strong> 15 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(10)">+</button>
-        <h2 class="program-title">Group dance</h2>
-        <div class="details" id="program10">
-            <p><strong>Leads:</strong> Group 1: Neenu Sundheep & Litty Prince
-Group 2: Rose Aju & Simy Johnappan
-Group 3: Maria Binil
+    <button type="button" class="collapsible">Group Dance</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Coordinator: Group 1 - Neenu Sundheep & Litty Prince, Group 2 - Rose Aju & Simy Johnappan, Group 3 - Maria Binil
     
  
 </p>
-            <p><strong>Participants:</strong> Group1: Aviah Saji, Ann Prince, Agnes Prince 
-Esther Fiona Francis , Grace Binoj 
-Jemy Varghese , Karen Marielia Kris                                             Group2:                                                                                                         Annabelle Joan Arukalil 
- Ann Palackalody ,  Emma George ,  Helenah Varghese , Jennifer Bitto 
-Juliana Purackal ,  Saira Ranjith 
- Sairah Ann Aju                                                                                                                                                                Group 3. Alvin Joby 
- Benjamin Mathew Chukkananil ,  Christiano Madassery 
- Jason George ,  Jery Varghese , Jeron Abraham 
- Kenneth Meckaden ,  Noel Antony ,  Royce Binil 
-Ryen Binil</p>
-            <p><strong>Start Time:</strong> 17:15:00</p>
-            <p><strong>End Time:</strong> 17:30:00</p>
-        </div>
+            <p><strong>Participants:</strong> Group 1: Aviah Saji, Ann Prince, Agnes Prince, Esther Fiona Francis, Grace Binoj, Jemy Varghese, Karen Marielia Kris                                 
+Group 2: Annabelle Joan Arukalil, Ann Palackalody, Emma George, Helenah Varghese, Jennifer Bitto, Juliana Purackal, Saira Ranjith, Sairah Ann Aju
+Group 3: Alvin Joby, Benjamin Mathew Chukkananil, Christiano Madassery, Jason George, Jery Varghese, Jeron Abraham, Kenneth Meckaden, Noel Antony, Royce Binil, Ryen Binil</p>
+            <p><strong>Duration:</strong> 8 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(11)">+</button>
-        <h2 class="program-title">Musical Skit:  ദൈവം തന്ന ബന്ധങ്ങൾ</h2>
-        <div class="details" id="program11">
-            <p><strong>Leads:</strong> Saleena Mano</p>
-            <p><strong>Participants:</strong> Jayesh Joseph, Siji Jayesh
- Jose Kuppamala , Jolly Jose
- Mano Ulahannan and Seleena Mano
- Rajan George, Jain Jose
- Saji George, Sherin Saji
- Shaji Joseph, Asha Shaji
- Sibichan George, Ancy Mathew 
- Swapna Peter, Reena Rajeev
- Alan Saji, Angie Raju, Benjamin Raju, Dhaya Rajeev , Delvin George , Lavina Peter , Milan Saji,  Vishal Mano, Teena Joel , Joel Jose, Aishwarya Alexander, Nayana Shibu, and Edwin Joshy</p>
-            <p><strong>Start Time:</strong> 17:30:00</p>
-            <p><strong>End Time:</strong> 17:45:00</p>
-        </div>
+    <button type="button" class="collapsible">Musical Skit:  ദൈവം തന്ന ബന്ധങ്ങൾ</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Coordinator: Saleena Mano
+Choreography: Anjana Mano</p>
+            <p><strong>Participants:</strong> Jayesh Joseph, Siji Jayesh, Jose Kuppamala, Jolly Jose, Mano Ulahannan, Seleena Mano, Rajan George, Jain Jose, Saji George, Sherin Saji, Shaji Joseph, Asha Shaji, Sibichan George, Ancy Mathew, Swapna Peter, Reena Rajeev, Alan Saji, Angie Raju, Benjamin Raju, Dhaya Rajeev, Delvin George, Lavina Peter, Milan Saji, Vishal Mano, Teena Joel, Joel Jose, Aishwarya Alexander, Nayana Shibu, Edwin Joshy</p>
+            <p><strong>Duration:</strong> 24 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(12)">+</button>
-        <h2 class="program-title">Chavittunadakam and Angel dance
-A story of St. Joseph, protector of Holy Family 
-</h2>
-        <div class="details" id="program12">
-            <p><strong>Leads:</strong> Choreography: Glaiji Titus
-Coordinator : Jasmine Roney 
+    <button type="button" class="collapsible">Chavittunadakam and Angel dance: A story of St. Joseph, Protector of The Holy Family 
+</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Coordinator: Jasmine Roney
+Choreography: Glaiji Titus
+
 
 </p>
-            <p><strong>Participants:</strong>  Chavittunadakam participants                                                                                  Alwin Jose, Ryane Titus, Agnel George, Arun Saji
- Andrew Palackalody, Deon Antony Abraham, Adarsh Felix, Edwin Joby, Albert Baiju, Mridul Joseph
- Kevin Meckaden,  Jolin Titus, Adrian Jose , Ashlin Joby
+            <p><strong>Participants:</strong> Chavittunadakam participants: Alwin Jose, Ryane Titus, Agnel George, Arun Saji,Andrew Palackalody,Deon Antony Abraham,Adarsh Felix,Edwin Joby,Albert Baiju,Mridul Joseph
+Kevin Meckaden,Jolin Titus,Adrian Jose,Ashlin Joby
 
-Angel dance participants 
-
-Jolin Titus, Kathy Meckaden, Christine
-Madassery, Angelene John, Renia Binil, Theresa Thomas, Richa Ranjith 
+Angel dance participants: Jolin Titus, Kathy Meckaden, Christine,Madassery, Angelene John, Renia Binil, Theresa Thomas, Richa Ranjith
 </p>
-            <p><strong>Start Time:</strong> 17:45:00</p>
-            <p><strong>End Time:</strong> 18:00:00</p>
-        </div>
+            <p><strong>Duration:</strong> 22 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(13)">+</button>
-        <h2 class="program-title">Group dance</h2>
-        <div class="details" id="program13">
-            <p><strong>Leads:</strong> Jissa Jacob 
+    <button type="button" class="collapsible">Group Dance</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Coordinator: Jissa Jacob 
 </p>
-            <p><strong>Participants:</strong> Jissa Nitin, Surabhi John Jessy Joseph,Litty Prince, Neenu Sunheep, Rose Aju, Anu Joseph</p>
-            <p><strong>Start Time:</strong> 18:00:00</p>
-            <p><strong>End Time:</strong> 18:15:00</p>
-        </div>
+            <p><strong>Participants:</strong> Jissa Nitin, Surabhi John, Jessy Joseph, Litty Prince, Neenu Sunheep, Rose Aju, Anu Joseph</p>
+            <p><strong>Duration:</strong> 7 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(14)">+</button>
-        <h2 class="program-title">Skit  : Kudumbam.</h2>
-        <div class="details" id="program14">
-            <p><strong>Leads:</strong> Jerry  Kalappurackal</p>
-            <p><strong>Participants:</strong> Jerry  Kalappurackal, Wilson Nechikat, Sophie Nechikat, Norah Sebastian, Rohan Sebastian, Davis Alengaden, Anna Alengaden,  Ummachen Murikken, Tessie Murikken , Elizabeth Murikken,  Mary Murikken, Thomas Murikken, Rajesh Jose, Preethy Rajesh, Caitilyn Jomon, Cathyln Jomon,  Sarah Shajan , Michelle Jepson, Roshan Sebastian, Johan Alengaden , Shajan Madassery, Jacob Padayattil, Jepson Padayattil.
-</p>
-            <p><strong>Start Time:</strong> 18:15:00</p>
-            <p><strong>End Time:</strong> 18:30:00</p>
-        </div>
+    <button type="button" class="collapsible">Skit: Kudumbam</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Script and Direction: Jerry  Kalappurackal</p>
+            <p><strong>Participants:</strong> Jerry Kalappurackal, Wilson Nechikat, Sophie Nechikat, Norah Sebastian, Rohan Sebastian, Davis Alengaden, Anna Alengaden,  Ummachen Murikken, Tessie Murikken , Elizabeth Murikken,  Mary Murikken, Thomas Murikken, Rajesh Jose, Preethy Rajesh, Caitilyn Jomon, Cathyln Jomon,  Sarah Shajan , Michelle Jepson, Roshan Sebastian, Johan Alengaden , Shajan Madassery, Jacob Padayattil, Jepson Padayattil</p>
+            <p><strong>Duration:</strong> 19 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(15)">+</button>
-        <h2 class="program-title">Group dance</h2>
-        <div class="details" id="program15">
-            <p><strong>Leads:</strong> Riya Sabu </p>
+    <button type="button" class="collapsible">Group Dance</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Choreography: Riya Sabu </p>
             <p><strong>Participants:</strong> Riya Sabu, Arya Trusty, Sarah Noble, Neol Maria, Sandra Gigi, Janet Justin, Joseph John Arukalil, Leo Antony, John Biju, Mathew Biju</p>
-            <p><strong>Start Time:</strong> 18:30:00</p>
-            <p><strong>End Time:</strong> 18:45:00</p>
-        </div>
+            <p><strong>Duration:</strong> 06:00:00 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(16)">+</button>
-        <h2 class="program-title">Kolkali </h2>
-        <div class="details" id="program16">
-            <p><strong>Leads:</strong> Glaiji Titus & Jasmine Roney</p>
+    <button type="button" class="collapsible">Kolkali </button>
+    <div class="content">
+            <p><strong>Leads:</strong> Choreography: Glaiji Titus, Jasmine Roney</p>
             <p><strong>Participants:</strong> Saji Joseph, Baiju Antony, Binil Babu.
-Roney Varghese, Lijo Paul
-Joychan Chukkananil, Freddy Purackal, and 
-Joy Mullapparamban
+Roney Varghese, Lijo Paul, Joychan Chukkananil, Freddy Purackal, Joy Mullapparamban
 </p>
-            <p><strong>Start Time:</strong> 18:45:00</p>
-            <p><strong>End Time:</strong> 19:00:00</p>
-        </div>
+            <p><strong>Duration:</strong> 6 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(17)">+</button>
-        <h2 class="program-title">Drama.   
-"I am always with you"</h2>
-        <div class="details" id="program17">
-            <p><strong>Leads:</strong> Script and direction: Salomi Tom </p>
-            <p><strong>Participants:</strong> Grace Binoj, Avia Saji,Ann Prince .Anna Joel, Agenes Prince, Karen Marielia Kris, Ann Palackalody, Helena Varghese , Jennifer Bitto , Johan Bitto, Samuel Aju, Sarah Aju, Esther Mary Joyas , Elvira Anna Joyas, Juliana Purackal, Noel Antony, Jason George, Rebecca Kocherry,Simon Biji, Sharen Biji,Kevin Mario Kris.
-Andrew Palackalody, Deon Antony Abraham, Daniel Jijo, Juan Binoj, Aleena Saji, Ashley Purackal, Ashlin Joby, Irene Binoj, Danah Vargehese 
-Jincy Manoj, Manoj George,Antony Thomas, Darly Abraham, Suninth Binoj, Lini Jijo, Judy Jobi, Mini George, Mary Savio, Sabu John, MaryAnn Kris, Mini Biji, Ajais Joy 
-
-Jonah Varghese, Steven Biji, Aiden Chemmanure, Joji Varghese, Ancy Sabu, Joel George, SherinBiji
+    <button type="button" class="collapsible">Drama: "I am always with you"</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Script and Direction: Salomi Tom </p>
+            <p><strong>Participants:</strong> Grace Binoj, Avia Saji, Ann Prince, Anna Joel, Agenes Prince, Karen Marielia Kris, Ann Palackalody, Helena Varghese, Jennifer Bitto, Johan Bitto, Samuel Aju, Sarah Aju, Esther Mary Joyas, Elvira Anna Joyas, Juliana Purackal, Noel Antony, Jason George, Rebecca Kocherry, Simon Biji, Sharen Biji, Kevin Mario Kris, Andrew Palackalody, Deon Antony Abraham, Daniel Jijo, Juan Binoj, Aleena Saji, Ashley Purackal, Ashlin Joby, Irene Binoj, Danah Vargehese, Jincy Manoj, Manoj George,Antony Thomas, Darly Abraham, Suninth Binoj, Lini Jijo, Judy Jobi, Mini George, Mary Savio, Sabu John, MaryAnn Kris, Mini Biji, Ajais Joy, Jonah Varghese, Steven Biji, Aiden Chemmanure, Joji Varghese, Ancy Sabu, Joel George, Sherin Biji
 </p>
-            <p><strong>Start Time:</strong> 19:00:00</p>
-            <p><strong>End Time:</strong> 19:15:00</p>
-        </div>
+            <p><strong>Duration:</strong> 23 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(18)">+</button>
-        <h2 class="program-title">   Margamkali</h2>
-        <div class="details" id="program18">
-            <p><strong>Leads:</strong> Choreography: Glaiji Titus/Rosen Kocherry</p>
-            <p><strong>Participants:</strong> Glaiji Titus., Joilin Titus., Rahael Kocherry
-Rosen Kocherry, Mini Anthony, Theresa Thomas, Selva Alengaden, Maria Binil
-Jasmin Jose, Anu Antony
+    <button type="button" class="collapsible">Margamkali</button>
+    <div class="content">
+            <p><strong>Leads:</strong> Choreography: Glaiji Titus, Rosen Kocherry</p>
+            <p><strong>Participants:</strong> Glaiji Titus, Joilin Titus, Rahael Kocherry, Rosen Kocherry, Mini Anthony, Theresa Thomas, Selva Alengaden, Maria Binil, Jasmin Jose, Anu Antony
 
 </p>
-            <p><strong>Start Time:</strong> 19:15:00</p>
-            <p><strong>End Time:</strong> 19:30:00</p>
-        </div>
+            <p><strong>Duration:</strong> 08:00:00 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(19)">+</button>
-        <h2 class="program-title">Skit: Vishudha Saheda</h2>
-        <div class="details" id="program19">
+    <button type="button" class="collapsible">Skit: Vishudha Saheda</button>
+    <div class="content">
             <p><strong>Leads:</strong> Coordinator: Molly Roy</p>
             <p><strong>Participants:</strong> Joseph Varghese, James Paul, Nikhil Mathew, Molly Roy, Filsy George, Saji Mathew, Thomas Simon,  Shibu Kuriachan, Roy Xavier,Levin Thomas, Binoj Issac, John Cherukara, George Pulichamakkel, Christy Roy, Bella Roy, Amanda Pulichumakel, Sandra Gigi, Mareena Cherukkara, Anjali Binoj, Ryan Nikhil, Julie Binoj, Riya Sabu  Alice Thomas, Shincy Shibu</p>
-            <p><strong>Start Time:</strong> 19:30:00</p>
-            <p><strong>End Time:</strong> 19:45:00</p>
-        </div>
+            <p><strong>Duration:</strong> 35 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(20)">+</button>
-        <h2 class="program-title">Honoring of 
+    <button type="button" class="collapsible">Honoring of 
 couples who 
 celebrated 25yrs 
-of marriage</h2>
-        <div class="details" id="program20">
+of marriage</button>
+    <div class="content">
             <p><strong>Leads:</strong> Coordinator: Cigil Palackalody</p>
             <p><strong>Participants:</strong> His Excellency Bishop Mar Joy Alappatt, Fr. Ruban Thannickal, Trustees: Cigil Palackalody, Hormese Murikken, Rajan George, Saji Joseph, Parish Secretary: Juliet Thomas</p>
-            <p><strong>Start Time:</strong> 19:45:00</p>
-            <p><strong>End Time:</strong> 20:00:00</p>
-        </div>
+            <p><strong>Duration:</strong> 7 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(21)">+</button>
-        <h2 class="program-title">Vote of Thanks </h2>
-        <div class="details" id="program21">
+    <button type="button" class="collapsible">Vote of Thanks </button>
+    <div class="content">
             <p><strong>Leads:</strong> Coordinator: Cigil Palackalody</p>
             <p><strong>Participants:</strong> Cigil Palackalody </p>
-            <p><strong>Start Time:</strong> 20:00:00</p>
-            <p><strong>End Time:</strong> 20:15:00</p>
-        </div>
+            <p><strong>Duration:</strong> 7 minutes</p>
     </div>
     
-    <div class="program">
-        <button class="toggle-button" onclick="toggleDetails(22)">+</button>
-        <h2 class="program-title">Musical medley</h2>
-        <div class="details" id="program22">
+    <button type="button" class="collapsible">Musical medley</button>
+    <div class="content">
             <p><strong>Leads:</strong> Coordinator: Sibichen George</p>
-            <p><strong>Participants:</strong> Mano Ulahannan,Jayesh Joseph,Sibichen George, 
-Saji George, Seleena Mano, Sherin Saji</p>
-            <p><strong>Start Time:</strong> 20:15:00</p>
-            <p><strong>End Time:</strong> 20:30:00</p>
-        </div>
+            <p><strong>Participants:</strong> Mano Ulahannan, Jayesh Joseph, Sibichen George, Saji George, Seleena Mano, Sherin Saji</p>
+            <p><strong>Duration:</strong> 10 minutes</p>
     </div>
 
-    <script>
-        function toggleDetails(programNumber) {
-            const details = document.getElementById("program" + programNumber);
-            const toggleButton = document.querySelector(".program:nth-child(" + (programNumber + 2) + ") button");
 
-            if (details.style.display === "none" || details.style.display === "") {
-                details.style.display = "block";
-                toggleButton.textContent = "+";
-            } else {
-                details.style.display = "none";
-                toggleButton.textContent = "+";
-            }
-        }
-    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
 </body>
 </html>
